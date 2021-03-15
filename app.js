@@ -14,5 +14,13 @@ about.addEventListener("click", function (e) {
       // add the class of active to the button clicked
       e.target.classList.add("active");
     });
+    // hide all articles
+    articles.forEach(function (article) {
+      // remove the active class
+      article.classList.remove("active");
+    });
+    // add the active class to the relevant one
+    const element = document.getElementById(id);
+    element.classList.add("active");
   }
 });
